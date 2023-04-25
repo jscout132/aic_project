@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+<title>AIC</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg gray-bg">
+        <img src="/images/AIC.png" alt="" id="logo-img">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Visit</a>
+            <a class="nav-item nav-link" href="#">Exhibitions & Events</a>
+            <a class="nav-item nav-link" href="#">The Collection</a>
+          </div>
+        </div>
+      </nav>
+
+
+<div class="container body-area">
+    <h3>Our Collection</h3>
+    <p>Hover over each image to view the title. Click for more information</p>
+    <div class="gall-row-1" id="gall-row-1"> 
+
+        <figure class="gall-item-1" id="fig1" onclick="description('d1', 'img_1', 'a1', 'da1')" >
+            <img class="gall-img" src="images/cow-skull-with-calico-roses.jpg" alt="61428" id="img_1">
+            <div class="title-1" >
+                <div class="text-area" id="t1">filler</div>
+            </div>
+        </figure>
+
+        <figure class="gall-item-2" id="fig2" onclick="description('d1', 'img_2', 'a1', 'da1')">
+            <img class="gall-img" src="images/alka-seltzer.jpg" alt="122054" id="img_2">
+            <div class="title-2" >
+                <div class="text-area" id="t2">hover filler</div>
+            </div>
+        </figure>
+
+        <figure class="gall-item-3" id="fig3" onclick="description('d1','img_3', 'a1', 'da1')">
+            <img class="gall-img" src="images/bay-of-marseille.jpg" alt="16487" id="img_3">
+            <div class="title-3">
+                <div class="text-area" id="t3">hover filler</div>
+            </div>
+        </figure>
+    </div>
+    <!-- description area for the first row of art -->
+    <div id="d1" style="display: none">
+        <h2 id="a1"></h2>
+        <p id="da1"></p>
+    </div>
+    
+    <div class="gall-row-2" id="gall-row-2">
+        <figure class="gall-item-4" id="fig4" onclick="description('d2','img_4', 'a2', 'da2')">
+            <img class="gall-img" src="images/after-hurricane.jpg" alt="16776" id="img_4">
+            <div class="title-4" >
+                <div class="text-area" id="t4">sample 4</div>
+            </div>
+        </figure>
+
+        <figure class="gall-item-5" id="fig5" onclick="description('d2','img_5', 'a2', 'da2')">
+            <img class="gall-img" src="images/glacier-rock-from-below.jpg" alt="60122" id="img_5">
+            <div class="title-5" >
+                <div class="text-area" id="t5">sample 5</div>
+            </div>
+        </figure>
+
+        <figure class="gall-item-6" id="fig6" onclick="description('d2','img_6', 'a2', 'da2')">
+            <img class="gall-img" src="images/starry-night-and-the-astronauts.jpg" alt="129884" id="img_6">
+            <div class="title-6" id="t6">
+                <div class="text-area">sample text</div>
+            </div>
+        </figure>
+    </div>
+    <div id="d2" style="display: none">
+        <h2 id="a2"></h2>
+        <p id="da2"></p>
+    </div>
+</div>
+
+<footer>
+    
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
